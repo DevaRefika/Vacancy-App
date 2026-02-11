@@ -1,0 +1,19 @@
+Running Tests
+Backend (Unit & Integration)
+
+Menguji logika internal model dan ketersediaan API Endpoint.
+Bash
+
+# Di folder backend
+php artisan test
+
+Frontend (End-to-End)
+
+Menguji alur nyata pengguna menggunakan Playwright: Login -> Cari Lowongan -> Lihat Detail.
+
+    Catatan: Pastikan server Laravel dan Next.js sudah menyala sebelum menjalankan tes.
+
+Bash
+
+# Di folder frontend
+npx playwright test

@@ -1,0 +1,18 @@
+Running the Application
+Backend
+
+Buka terminal baru di folder backend:
+Bash
+
+php artisan serve
+
+    Server akan berjalan di: http://127.0.0.1:8000
+
+Frontend
+
+Buka terminal baru di folder frontend:
+Bash
+
+npm run dev
+
+    Server akan berjalan di: http://localhost:3000
