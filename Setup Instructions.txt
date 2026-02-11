@@ -1,7 +1,7 @@
 Setup Instructions
 
 Ikuti langkah-langkah di bawah ini untuk menjalankan aplikasi di lingkungan lokal Anda.
-1. Persiapan Database (MySQL)
+Persiapan Database (MySQL)
 
 Karena database sudah disediakan dalam bentuk file export .sql, ikuti langkah ini:
 
@@ -11,30 +11,30 @@ Karena database sudah disediakan dalam bentuk file export .sql, ikuti langkah in
 
     Pilih database api_backend, lalu gunakan fitur Import untuk mengunggah file .sql yang telah disediakan di folder proyek.
 
-2. Konfigurasi Backend (Laravel)
+Konfigurasi Backend (Laravel)
 
     Buka terminal di direktori /backend.
 
     Jalankan perintah untuk menginstal library yang dibutuhkan:
-    Bash
 
     composer install
+
+Salin file konfigurasi environment:
+
+cp .env.example .env
 
 Konfigurasi Frontend (Next.js)
 
     Buka terminal baru di direktori /frontend.
 
     Instal dependensi Node.js:
-    Bash
 
     npm install
 
     Instalasi browser engine untuk keperluan pengujian (Playwright):
-    Bash
 
     npx playwright install
 
     Pastikan file .env.local sudah memiliki URL API yang mengarah ke Laravel:
-    Cuplikan kode
 
     NEXT_PUBLIC_API_URL=http://127.0.0.1:8000/api
